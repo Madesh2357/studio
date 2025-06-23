@@ -3,3 +3,4 @@ config();
 
 import '@/ai/flows/summarize-weather-data.ts';
 import '@/ai/flows/generate-fishing-recommendation.ts';
+import '@/ai/flows/generate-weather-forecast.ts';

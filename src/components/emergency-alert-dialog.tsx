@@ -24,7 +24,7 @@ export function EmergencyAlertDialog({ open, onOpenChange }: EmergencyAlertDialo
           </div>
           <AlertDialogTitle className="text-center text-2xl font-bold">EMERGENCY ALERT!</AlertDialogTitle>
           <AlertDialogDescription className="text-center text-base">
-            Rapid increase in storm probability detected! The chance of a storm has increased by more than 40% in the last 3 hours.
+            High risk of rapid storm development! The forecast shows a potential probability increase of over 40% in a 3-hour period.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div className="my-4 text-center text-muted-foreground">

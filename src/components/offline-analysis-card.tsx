@@ -19,8 +19,8 @@ export function OfflineAnalysisCard({ data }: OfflineAnalysisCardProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>72-Hour Historical Analysis</CardTitle>
-        <CardDescription>Storm probability trend over the last 72 hours.</CardDescription>
+        <CardTitle>72-Hour Forecast</CardTitle>
+        <CardDescription>Predicted storm probability trend over the next 72 hours.</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="h-60 w-full">
@@ -32,7 +32,7 @@ export function OfflineAnalysisCard({ data }: OfflineAnalysisCardProps) {
                         tickLine={false}
                         axisLine={false}
                         tickMargin={8}
-                        tickFormatter={(value) => `${value}h`}
+                        tickFormatter={(value) => `+${value}h`}
                         stroke="hsl(var(--muted-foreground))"
                         fontSize={12}
                     />
@@ -50,7 +50,7 @@ export function OfflineAnalysisCard({ data }: OfflineAnalysisCardProps) {
                         content={<ChartTooltipContent
                             indicator="dot"
                             formatter={(value) => `${value}%`}
-                            labelFormatter={(label) => `Hour: ${label}`}
+                            labelFormatter={(label) => `Hour: +${label}`}
                         />}
                     />
                     <Bar dataKey="probability" fill="var(--color-probability)" radius={4} />
